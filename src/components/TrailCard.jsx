@@ -1,16 +1,16 @@
 import styles from "./TrailCard.module.css"
 
-function TrailCard() {
+function TrailCard({image, title, location, length, difficulty}) {
+    const levelSrc = `src/assets/level-${difficulty}.png`
     return (
         <div className={styles.card}>
             <img className= {styles.cardimg}
-            src="https://www.svetoutdooru.cz/wp-content/uploads/sites/3/2021/03/greater-patagonian-trail-03-1500x880.jpg"
-            alt="greater-patagonian-trail"
+            src= {image} alt={title}
             />
-            <h3>Greater Patagonian Track </h3>
-            <h4>Chile and Argentina</h4>
-            <p>20.000 KM</p>
-            <img className={styles.difficulty} src="src/assets/level.png" alt="difficulty-level" />
+            <h3>{title}</h3>
+            <h4>{location}</h4>
+            <p>{length}</p>
+            <img className={styles.difficulty} src={levelSrc} alt="difficulty-level" />
             
             
 

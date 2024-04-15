@@ -1,6 +1,7 @@
 import authenticLogo from '/authentic-outdoor-logo.png'
 import './App.css'
 import TrailCard from './components/TrailCard'
+import cardData from "./assets/cardData.js"
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
     <>
       <div>
           <img src={authenticLogo} className="logo" alt="Authentic logo" />
-          <TrailCard />
+          <div className="cardDeck">
+          {cardData.map((card, i) => <TrailCard key={i} {...card}/>)}
+          </div>
       </div>
     </>
   )

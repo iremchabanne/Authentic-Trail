@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(251, 243, 234);
+  padding: 10px;
+  min-height: 350px;
+}
+
+.cardimg {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.difficulty {
+  margin-top: 20px;
+  width: 80px;
+}

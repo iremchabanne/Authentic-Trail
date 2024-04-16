@@ -26,3 +26,10 @@
   margin-bottom: 5px;
   width: 60px;
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}

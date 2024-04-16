@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.selectedContainer {
+  display: flex;
+  gap: 30px;
+  margin: 50px 10%;
+}
+
+.selectedCardImg {
+  max-width: 40%;
+}
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.difficulty {
+  max-width: 80px;
+  align-self: last baseline;
+  margin-left: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: justify;
+}

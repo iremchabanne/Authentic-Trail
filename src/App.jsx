@@ -3,7 +3,7 @@ import "./App.css";
 import TrailCard from "./components/TrailCard";
 import cardData from "./assets/cardData.js";
 import NavBar from "./components/NavBar.jsx";
-import SelectedCard from "./components/SelectedCard.jsx";
+import TrailBanner from "./components/TrailBanner.jsx";
 import { useState } from "react";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <div>
         <NavBar />
         <img src={authenticLogo} className="logo" alt="Authentic logo" />
-        <SelectedCard {...cardData[trailIndex]} />
+        <TrailBanner {...cardData[trailIndex]} />
         <div className="cardDeck">
           {cardData.map((card, i) => (
             <TrailCard

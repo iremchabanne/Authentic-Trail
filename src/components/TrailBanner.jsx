@@ -1,6 +1,6 @@
-import styles from "./SelectedCard.module.css";
+import styles from "./TrailBanner.module.css";
 
-function SelectedCard({
+function TrailBanner({
   image,
   title,
   location,
@@ -31,4 +31,4 @@ function SelectedCard({
   );
 }
 
-export default SelectedCard;
+export default TrailBanner;

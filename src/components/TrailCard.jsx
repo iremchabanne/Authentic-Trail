@@ -1,7 +1,14 @@
 import styles from "./TrailCard.module.css";
 import ButtonDescription from "./ButtonDescription";
 
-function TrailCard({ image, title, location, length, difficulty }) {
+function TrailCard({
+  image,
+  title,
+  location,
+  length,
+  difficulty,
+  handleClick,
+}) {
   const levelSrc = `src/assets/level-${difficulty}.png`;
   return (
     <div className={styles.card}>
@@ -15,7 +22,7 @@ function TrailCard({ image, title, location, length, difficulty }) {
           src={levelSrc}
           alt="difficulty-level"
         />
-        <ButtonDescription />
+        <ButtonDescription handleClick={handleClick} />
       </div>
     </div>
   );

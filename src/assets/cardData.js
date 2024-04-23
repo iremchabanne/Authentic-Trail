@@ -43,7 +43,7 @@ const cardData = [
     image:
       "https://newzealandtrails.com/assets/Uploads/rakiura-track-stewart-island2.jpg",
     title: "Rakiura Track",
-    location: "New Zealande",
+    location: "New Zealand",
     length: "32 KM",
     difficulty: "2",
     description:

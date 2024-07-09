@@ -1,4 +1,5 @@
 import styles from "./TrailBanner.module.css";
+import PropTypes from "prop-types";
 
 function TrailBanner({
   image,
@@ -30,5 +31,14 @@ function TrailBanner({
     </div>
   );
 }
+
+TrailBanner.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  length: PropTypes.string.isRequired,
+  difficulty: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default TrailBanner;

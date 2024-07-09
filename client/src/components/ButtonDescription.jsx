@@ -3,8 +3,7 @@ import styles from "./ButtonDescription.module.css";
 function ButtonDescription({ handleClick }) {
   return (
     <button onClick={handleClick} className={styles.button}>
-      {" "}
-      Go!{" "}
+      Go!
     </button>
   );
 }

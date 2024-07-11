@@ -1,11 +1,13 @@
-//Allows you to create instances of our class models with different methods in order to interact with the database
+// Import the repository modules responsible for handling data operations on the tables
 
-const UsersRpository = require("../database/models/UsersRepository");
-const TrailRpository = require("../database/models/TrailRepository");
+const UserRpository = require("../database/models/UserRepository");
+const TrailRepository = require("../database/models/TrailRepository");
 
+// Create an empty object to hold data repositories for different tables
 const tables = {};
 
-tables.user = new UsersRpository({ table: "User" });
-tables.trail = new TrailRpository({ table: "Trail" });
+// Register each repository as data access point for its table
+tables.user = new UserRpository({ table: "User" });
+tables.trail = new TrailRepository({ table: "Trail" });
 
 module.exports = tables;

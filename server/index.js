@@ -2,7 +2,7 @@ require("dotenv").config();
 
 require("./database/client").checkConnection();
 
-const app = require("./app/config");
+const app = require("./config");
 
 const PORT = process.env.PORT;
 
